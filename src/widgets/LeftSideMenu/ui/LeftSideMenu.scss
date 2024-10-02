@@ -1,0 +1,10 @@
+.leftSideMenu {
+  padding: 30px;
+  background: var(--white);
+  width: 270px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 83px;
+  gap: 10px;
+}

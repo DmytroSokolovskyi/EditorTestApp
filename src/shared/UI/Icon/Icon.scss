@@ -1,0 +1,19 @@
+.icon {
+  color: var(--icon-redesigned);
+
+  &__button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  &__button:hover {
+    svg {
+      fill: var(--white);
+    }
+  }
+}
+

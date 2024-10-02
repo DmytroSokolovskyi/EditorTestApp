@@ -1,0 +1,43 @@
+@import 'reset';
+@import 'variables/global';
+@import 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,400;1,500;1,700;1,900&display=swap';
+
+
+.app {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--sky-captain);
+  background: var(--ghost-white);
+  font-family: var(--font-family-main), sans-serif;
+  min-height: 100vh;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--lavender-syrup);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--lavender-syrup);
+  border-radius: 20px;
+  border: 1px solid var(--hopeful-dream);
+}
+
+.app *::-webkit-scrollbar {
+  width: 12px;
+  height: 8px;
+}
+
+.app *::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+.app *::-webkit-scrollbar-thumb {
+  background-color: var(--lavender-syrup);
+  border-radius: 20px;
+  border: 2px solid var(--hopeful-dream);
+}

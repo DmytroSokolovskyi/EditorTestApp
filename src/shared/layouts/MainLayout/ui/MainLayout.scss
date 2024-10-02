@@ -1,0 +1,18 @@
+.main-layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: var(--white);
+
+  .main-layout__content {
+    flex-grow: 1;
+    height: calc(100vh - var(--header-height));
+    width: calc(100% - var(--left-side-menu-height));
+    overflow-y: auto;
+  }
+}
