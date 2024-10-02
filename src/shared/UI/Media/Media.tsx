@@ -1,5 +1,7 @@
 import { FC, useEffect, useState } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames.ts';
+import { Icon } from '@/shared/UI/Icon';
+import { ImageIcon } from '@/shared/assets/icons/icons.ts';
 
 interface MediaProps {
   link: string;
@@ -41,7 +43,7 @@ const Media: FC<MediaProps> = ({ link = '', width = 'auto', height = 'auto', cla
     setErrorElement(null);
 
     if (!link) {
-      setErrorElement(<span>error</span>);
+      setErrorElement(<Icon Svg={ImageIcon} />);
       return;
     }
 
@@ -83,7 +85,7 @@ const Media: FC<MediaProps> = ({ link = '', width = 'auto', height = 'auto', cla
               setMediaElement(newVideoElement);
             })
             .catch(() => {
-              const newErrorElement = <span>error</span>;
+              const newErrorElement = <Icon Svg={ImageIcon} />;
               setErrorElement(newErrorElement);
             });
         });
